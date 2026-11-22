@@ -263,8 +263,8 @@
 .page-about .about-portrait { box-shadow: 0 24px 55px rgba(0, 0, 0, .24); }
 .page-about .about-portrait img {
   aspect-ratio: 4 / 4.8;
-  object-position: 50% 34%;
-  filter: saturate(.92) contrast(1.03) brightness(.94);
+  object-position: 50% 30%;
+  filter: saturate(.96) contrast(1.02);
   transition: transform .8s var(--ease-out);
 }
 .page-about .about-portrait::after {
@@ -272,15 +272,8 @@
   position: absolute;
   inset: 0;
   z-index: 0;
-  background: rgba(8, 7, 6, .08);
+  background: rgba(8, 7, 6, .04);
   pointer-events: none;
-}
-.page-about .about-portrait .split__caption {
-  z-index: 2;
-  background: rgba(8, 7, 6, .82);
-  color: var(--paper);
-  font-weight: 500;
-  letter-spacing: .1em;
 }
 .page-about .about-intro .split__body .about-sign {
   margin-top: 28px;
