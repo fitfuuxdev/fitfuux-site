@@ -263,8 +263,8 @@
 .page-about .about-portrait { box-shadow: 0 24px 55px rgba(0, 0, 0, .24); }
 .page-about .about-portrait img {
   aspect-ratio: 4 / 4.8;
-  object-position: 50% 30%;
-  filter: saturate(.96) contrast(1.02);
+  object-position: 50% 50%;
+  filter: saturate(.98) contrast(1.02);
   transition: transform .8s var(--ease-out);
 }
 .page-about .about-portrait::after {
