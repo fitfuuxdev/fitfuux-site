@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="FITFUUX">
+  <rect width="64" height="64" rx="14" fill="#0e0d0c"/>
+  <path d="M27 16h18v6.5H34v8.2h10.2v6.5H34V48h-7z" fill="#8a6a3b" transform="translate(2 2)"/>
+  <path d="M25 14h18v6.5H32v8.2h10.2v6.5H32V46h-7z" fill="#f2e7d4"/>
+  <path d="M25 14h18v1.4H25z" fill="#fffdf8"/>
+</svg>

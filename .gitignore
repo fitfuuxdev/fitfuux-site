@@ -1,0 +1,6 @@
+__pycache__/
+*.py[cod]
+.office-verify/
+*.log
+.DS_Store
+Thumbs.db

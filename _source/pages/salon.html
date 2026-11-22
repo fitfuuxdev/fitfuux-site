@@ -1,0 +1,298 @@
+<section class="case-hero salon-hero" aria-labelledby="salon-title">
+  <div class="case-hero__bg">
+    <img src="{{BASE}}assets/img/salon-hero-1800.webp"
+         srcset="{{BASE}}assets/img/salon-hero-900.webp 900w, {{BASE}}assets/img/salon-hero-1800.webp 1800w"
+         sizes="100vw" alt="Светлая гостиная салона с мягкими креслами и тёплым светом" fetchpriority="high" width="1800" height="1013">
+  </div>
+  <div class="container case-hero__inner">
+    <div class="case-hero__copy">
+      <a class="case-hero__back" href="../portfolio.html">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M19 12H6M11 6l-6 6 6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Все кейсы
+      </a>
+      <span class="salon-hero-badge">Концепт-кейс · салон красоты</span>
+      <h1 id="salon-title">Здесь вам<br><em>становится</em><br>спокойно</h1>
+      <p class="case-hero__sub">Салон, в который приходят не только за стрижкой. За тишиной, вниманием и своим мастером.</p>
+      <div class="case-hero__actions">
+        <a class="btn btn--brass" href="tel:+79952585787">Записаться</a>
+        <a class="btn btn--ghost" href="https://wa.me/79952585787?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%B2%20%D1%81%D0%B0%D0%BB%D0%BE%D0%BD." target="_blank" rel="noopener">Написать в WhatsApp</a>
+      </div>
+      <div class="case-hero__meta">
+        <span class="salon-hero-discount">Первый визит — скидка 10%</span>
+        <span>Работаем по записи</span>
+      </div>
+    </div>
+    <div class="case-hero__3d" id="salon-stage" aria-label="3D-зеркало с подсветкой. Потяните, чтобы повернуть">
+      <canvas id="salon-canvas"></canvas>
+      <div class="hero-3d-fallback">
+        <img src="{{BASE}}assets/img/salon-mirror-fallback.webp" alt="3D-зеркало с подсветкой" width="760" height="860" loading="lazy">
+      </div>
+      <span class="case-hint">Потяните, чтобы повернуть</span>
+    </div>
+  </div>
+</section>
+
+<section class="case-section salon-about" id="about" aria-labelledby="salon-about-title">
+  <div class="container case-about">
+    <div class="case-about__media reveal">
+      <img src="{{BASE}}assets/img/salon-interior-1800.webp"
+           srcset="{{BASE}}assets/img/salon-interior-900.webp 900w, {{BASE}}assets/img/salon-interior-1800.webp 1800w"
+           sizes="(max-width: 900px) 100vw, 46vw" alt="Интерьер салона: круглые зеркала, кресла и стойка с продуктами" loading="lazy" width="1800" height="1250">
+    </div>
+    <div class="case-about__body reveal" style="--d:90ms">
+      <p class="eyebrow">О салоне</p>
+      <h2 id="salon-about-title">Не спешим.<br><em>И вам не дадим.</em></h2>
+      <p>Салон небольшой. Три кресла, отдельная комната для маникюра и тихая зона ожидания. Здесь нет очередей и суеты: мастера работают по записи, один клиент — одно время.</p>
+      <p class="salon-about__pull">Сначала разговор и чай, потом зеркало.</p>
+      <p>Мастер спрашивает, как вы укладываете волосы, сколько времени готовы тратить утром и что не любите. И только потом берёт ножницы.</p>
+      <div class="salon-about__facts">
+        <div class="salon-fact"><strong>3</strong><span>кресла</span></div>
+        <div class="salon-fact"><span class="salon-fact__label">Отдельная комната</span><span>для маникюра</span></div>
+        <div class="salon-fact"><span class="salon-fact__label">Тихая зона</span><span>ожидания</span></div>
+      </div>
+      <a class="salon-about__sign" href="#team">Команда салона
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="case-section salon-services" id="services" aria-labelledby="salon-services-title">
+  <div class="container">
+    <div class="case-section__head reveal">
+      <div>
+        <p class="eyebrow">Услуги и цены</p>
+        <h2 id="salon-services-title">Пять поводов<br>зайти</h2>
+      </div>
+      <p>Цены — за работу мастера. Точную стоимость скажем до начала: зависит от длины, объёма и состояния.</p>
+    </div>
+    <div class="case-menu-wrap">
+      <div class="case-menu reveal">
+        <article class="case-menu__row" data-preview="{{BASE}}assets/img/salon-hair-1800.webp" data-caption="Стрижка" tabindex="0">
+          <span class="salon-service__num">01</span>
+          <div class="case-menu__body">
+            <div class="case-menu__top"><h3 class="case-menu__name">Стрижка</h3></div>
+            <p class="case-menu__desc">Форма, которая живёт своей жизнью: укладывается утром за пять минут и держится до следующего визита.</p>
+            <div class="case-menu__thumb"><img src="{{BASE}}assets/img/salon-hair-900.webp" alt="Мастер делает стрижку" loading="lazy" width="900" height="1350"></div>
+          </div>
+          <div class="case-menu__price">от 1 900 ₽</div>
+        </article>
+        <article class="case-menu__row" data-preview="{{BASE}}assets/img/salon-color-1800.webp" data-caption="Окрашивание" tabindex="0">
+          <span class="salon-service__num">02</span>
+          <div class="case-menu__body">
+            <div class="case-menu__top"><h3 class="case-menu__name">Окрашивание</h3></div>
+            <p class="case-menu__desc">Цвет, который не спорит с лицом. Подбираем оттенок при свете дня, а не по картинке.</p>
+            <div class="case-menu__thumb"><img src="{{BASE}}assets/img/salon-color-900.webp" alt="Кисти и краска для окрашивания волос" loading="lazy" width="900" height="1350"></div>
+          </div>
+          <div class="case-menu__price">от 3 500 ₽</div>
+        </article>
+        <article class="case-menu__row" data-preview="{{BASE}}assets/img/salon-nails-1800.webp" data-caption="Маникюр и педикюр" tabindex="0">
+          <span class="salon-service__num">03</span>
+          <div class="case-menu__body">
+            <div class="case-menu__top"><h3 class="case-menu__name">Маникюр и педикюр</h3></div>
+            <p class="case-menu__desc">Аккуратно, стерильно, без спешки. Покрытие, которое не скалывается через день.</p>
+            <div class="case-menu__thumb"><img src="{{BASE}}assets/img/salon-nails-900.webp" alt="Уход за ногтями" loading="lazy" width="900" height="601"></div>
+          </div>
+          <div class="case-menu__price">от 1 600 ₽</div>
+        </article>
+        <article class="case-menu__row" data-preview="{{BASE}}assets/img/salon-facial-1800.webp" data-caption="Уход за лицом" tabindex="0">
+          <span class="salon-service__num">04</span>
+          <div class="case-menu__body">
+            <div class="case-menu__top"><h3 class="case-menu__name">Уход за лицом</h3></div>
+            <p class="case-menu__desc">Чистка, увлажнение, массаж. Кожа после — как после отпуска.</p>
+            <div class="case-menu__thumb"><img src="{{BASE}}assets/img/salon-facial-900.webp" alt="Уход за лицом в салоне" loading="lazy" width="900" height="600"></div>
+          </div>
+          <div class="case-menu__price">от 2 500 ₽</div>
+        </article>
+        <article class="case-menu__row" data-preview="{{BASE}}assets/img/salon-makeup-1800.webp" data-caption="Макияж" tabindex="0">
+          <span class="salon-service__num">05</span>
+          <div class="case-menu__body">
+            <div class="case-menu__top"><h3 class="case-menu__name">Макияж</h3></div>
+            <p class="case-menu__desc">Дневной, вечерний, свадебный. Смотрим на свет, на одежду и на то, как вы себя чувствуете.</p>
+            <div class="case-menu__thumb"><img src="{{BASE}}assets/img/salon-makeup-900.webp" alt="Макияж крупным планом" loading="lazy" width="900" height="600"></div>
+          </div>
+          <div class="case-menu__price">от 2 800 ₽</div>
+        </article>
+        <a class="salon-services__cta" href="#booking">Записаться
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+      <figure class="case-menu__preview reveal" id="salon-preview" style="--d:80ms">
+        <img src="{{BASE}}assets/img/salon-hair-1800.webp" alt="Стрижка" width="1400" height="2100">
+        <figcaption><span>01</span> Стрижка</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="case-section salon-team" id="team" aria-labelledby="salon-team-title">
+  <div class="container">
+    <div class="case-section__head reveal">
+      <div>
+        <p class="eyebrow">Команда</p>
+        <h2 id="salon-team-title">Кто будет рядом</h2>
+      </div>
+      <p>Четыре человека. Каждый занимается своим делом и не подменяет другого.</p>
+    </div>
+    <div class="case-team">
+      <article class="team-card reveal" style="--d:0ms">
+        <figure class="team-card__photo">
+          <img src="{{BASE}}assets/img/team-anna-800.webp"
+               srcset="{{BASE}}assets/img/team-anna-480.webp 480w, {{BASE}}assets/img/team-anna-800.webp 800w"
+               sizes="(max-width: 600px) 44vw, (max-width: 1080px) 44vw, 23vw"
+               width="800" height="1000" loading="lazy" decoding="async"
+               alt="Анна, мастер по волосам">
+        </figure>
+        <div class="team-card__copy">
+          <span class="team-card__role">Волосы</span>
+          <h3>Анна</h3>
+          <p>Стрижки, окрашивание, сложные блонды. Любит короткие формы.</p>
+        </div>
+      </article>
+      <article class="team-card reveal" style="--d:90ms">
+        <figure class="team-card__photo">
+          <img src="{{BASE}}assets/img/team-marina-800.webp"
+               srcset="{{BASE}}assets/img/team-marina-480.webp 480w, {{BASE}}assets/img/team-marina-800.webp 800w"
+               sizes="(max-width: 600px) 44vw, (max-width: 1080px) 44vw, 23vw"
+               width="800" height="1000" loading="lazy" decoding="async"
+               alt="Марина, мастер по ногтям">
+        </figure>
+        <div class="team-card__copy">
+          <span class="team-card__role">Ногти</span>
+          <h3>Марина</h3>
+          <p>Маникюр, педикюр, укрепление. Работает тонкой кистью, без спешки.</p>
+        </div>
+      </article>
+      <article class="team-card reveal" style="--d:180ms">
+        <figure class="team-card__photo">
+          <img src="{{BASE}}assets/img/team-olga-800.webp"
+               srcset="{{BASE}}assets/img/team-olga-480.webp 480w, {{BASE}}assets/img/team-olga-800.webp 800w"
+               sizes="(max-width: 600px) 44vw, (max-width: 1080px) 44vw, 23vw"
+               width="800" height="1000" loading="lazy" decoding="async"
+               alt="Ольга, мастер по лицу">
+        </figure>
+        <div class="team-card__copy">
+          <span class="team-card__role">Лицо</span>
+          <h3>Ольга</h3>
+          <p>Уходы, чистки, массаж. Сначала кожа, потом макияж.</p>
+        </div>
+      </article>
+      <article class="team-card reveal" style="--d:270ms">
+        <figure class="team-card__photo">
+          <img src="{{BASE}}assets/img/team-irina-800.webp"
+               srcset="{{BASE}}assets/img/team-irina-480.webp 480w, {{BASE}}assets/img/team-irina-800.webp 800w"
+               sizes="(max-width: 600px) 44vw, (max-width: 1080px) 44vw, 23vw"
+               width="800" height="1000" loading="lazy" decoding="async"
+               alt="Ирина, администратор салона">
+        </figure>
+        <div class="team-card__copy">
+          <span class="team-card__role">Администратор</span>
+          <h3>Ирина</h3>
+          <p>Помнит, кто пьёт чай с мёдом, и не ставит двух гостей на одно время.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="case-section salon-reviews" aria-labelledby="salon-reviews-title">
+  <div class="container">
+    <div class="case-section__head reveal">
+      <div>
+        <p class="eyebrow">Отзывы</p>
+        <h2 id="salon-reviews-title">Что говорят<br>после</h2>
+      </div>
+      <p>Коротко и по делу. Без рекламных восторгов.</p>
+    </div>
+    <div class="case-reviews">
+      <article class="review-card reveal" style="--d:0ms">
+        <div class="review-card__rating" role="img" aria-label="Оценка 5 из 5">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.7 5.6 6.2.9-4.5 4.4 1.1 6.1-5.5-2.9-5.5 2.9 1.1-6.1L3.1 9.5l6.2-.9L12 3Z" fill="currentColor"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.7 5.6 6.2.9-4.5 4.4 1.1 6.1-5.5-2.9-5.5 2.9 1.1-6.1L3.1 9.5l6.2-.9L12 3Z" fill="currentColor"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.7 5.6 6.2.9-4.5 4.4 1.1 6.1-5.5-2.9-5.5 2.9 1.1-6.1L3.1 9.5l6.2-.9L12 3Z" fill="currentColor"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.7 5.6 6.2.9-4.5 4.4 1.1 6.1-5.5-2.9-5.5 2.9 1.1-6.1L3.1 9.5l6.2-.9L12 3Z" fill="currentColor"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.7 5.6 6.2.9-4.5 4.4 1.1 6.1-5.5-2.9-5.5 2.9 1.1-6.1L3.1 9.5l6.2-.9L12 3Z" fill="currentColor"/></svg>
+        </div>
+        <blockquote>«Пришла на стрижку, осталась на окрашивание. Впервые не хотелось смотреть на часы.»</blockquote>
+        <div class="review-card__foot">
+          <div class="review-card__person">
+            <span class="review-card__avatar" aria-hidden="true">М</span>
+            <div class="review-card__author">
+              <span class="review-card__name">Марина</span>
+              <span class="review-card__visits">2 визита</span>
+            </div>
+          </div>
+          <span class="verified"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m5 12 4 4L19 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Проверено</span>
+        </div>
+      </article>
+      <article class="review-card reveal" style="--d:100ms">
+        <div class="review-card__rating" role="img" aria-label="Оценка 5 из 5">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.7 5.6 6.2.9-4.5 4.4 1.1 6.1-5.5-2.9-5.5 2.9 1.1-6.1L3.1 9.5l6.2-.9L12 3Z" fill="currentColor"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.7 5.6 6.2.9-4.5 4.4 1.1 6.1-5.5-2.9-5.5 2.9 1.1-6.1L3.1 9.5l6.2-.9L12 3Z" fill="currentColor"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.7 5.6 6.2.9-4.5 4.4 1.1 6.1-5.5-2.9-5.5 2.9 1.1-6.1L3.1 9.5l6.2-.9L12 3Z" fill="currentColor"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.7 5.6 6.2.9-4.5 4.4 1.1 6.1-5.5-2.9-5.5 2.9 1.1-6.1L3.1 9.5l6.2-.9L12 3Z" fill="currentColor"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.7 5.6 6.2.9-4.5 4.4 1.1 6.1-5.5-2.9-5.5 2.9 1.1-6.1L3.1 9.5l6.2-.9L12 3Z" fill="currentColor"/></svg>
+        </div>
+        <blockquote>«Тишина, чай и мастер, который слышит. Для меня это и есть салон.»</blockquote>
+        <div class="review-card__foot">
+          <div class="review-card__person">
+            <span class="review-card__avatar" aria-hidden="true">Е</span>
+            <div class="review-card__author">
+              <span class="review-card__name">Екатерина</span>
+              <span class="review-card__visits">5 визитов</span>
+            </div>
+          </div>
+          <span class="verified"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m5 12 4 4L19 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Проверено</span>
+        </div>
+      </article>
+      <article class="review-card reveal" style="--d:200ms">
+        <div class="review-card__rating" role="img" aria-label="Оценка 5 из 5">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.7 5.6 6.2.9-4.5 4.4 1.1 6.1-5.5-2.9-5.5 2.9 1.1-6.1L3.1 9.5l6.2-.9L12 3Z" fill="currentColor"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.7 5.6 6.2.9-4.5 4.4 1.1 6.1-5.5-2.9-5.5 2.9 1.1-6.1L3.1 9.5l6.2-.9L12 3Z" fill="currentColor"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.7 5.6 6.2.9-4.5 4.4 1.1 6.1-5.5-2.9-5.5 2.9 1.1-6.1L3.1 9.5l6.2-.9L12 3Z" fill="currentColor"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.7 5.6 6.2.9-4.5 4.4 1.1 6.1-5.5-2.9-5.5 2.9 1.1-6.1L3.1 9.5l6.2-.9L12 3Z" fill="currentColor"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.7 5.6 6.2.9-4.5 4.4 1.1 6.1-5.5-2.9-5.5 2.9 1.1-6.1L3.1 9.5l6.2-.9L12 3Z" fill="currentColor"/></svg>
+        </div>
+        <blockquote>«Маникюр держится третью неделю. Приду ещё.»</blockquote>
+        <div class="review-card__foot">
+          <div class="review-card__person">
+            <span class="review-card__avatar" aria-hidden="true">О</span>
+            <div class="review-card__author">
+              <span class="review-card__name">Ольга</span>
+              <span class="review-card__visits">1 визит</span>
+            </div>
+          </div>
+          <span class="verified"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m5 12 4 4L19 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Проверено</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="case-section salon-book case-book" id="booking" aria-labelledby="salon-book-title">
+  <div class="container case-book__inner">
+    <div class="reveal">
+      <p class="eyebrow">Запись</p>
+      <h2 id="salon-book-title">Первый визит —<br>со скидкой 10%</h2>
+      <p>Позвоните или напишите в WhatsApp. Подберём время, мастера и услугу. Без анкет и лишних вопросов.</p>
+      <div class="case-book__discount">Скидка <b>−10%</b> на первый визит</div>
+      <div class="salon-book__contacts">
+        <a href="tel:+79952585787">+7 995 258-57-87</a>
+        <a href="https://wa.me/79952585787" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+    <div class="case-book__actions reveal" style="--d:90ms">
+      <a class="btn btn--dark" href="tel:+79952585787">Позвонить</a>
+      <a class="btn btn--ghost" href="https://wa.me/79952585787" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <div class="salon-footnote">
+    <span>Концепт-кейс FITFUUX. Демо-салон, цены и имена — для примера.</span>
+    <a class="link-arrow" href="../portfolio.html">Смотреть второй кейс
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </div>
+</div>

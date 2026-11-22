@@ -1,0 +1,275 @@
+<section class="case-hero workshop-hero" aria-labelledby="workshop-title">
+  <div class="case-hero__bg">
+    <img src="{{BASE}}assets/img/workshop-hero-1800.webp"
+         srcset="{{BASE}}assets/img/workshop-hero-900.webp 900w, {{BASE}}assets/img/workshop-hero-1800.webp 1800w"
+         sizes="100vw" alt="Столяр работает с доской у верстака в мастерской" fetchpriority="high" width="1800" height="1152">
+  </div>
+  <div class="container case-hero__inner">
+    <div class="case-hero__copy">
+      <a class="case-hero__back" href="../portfolio.html">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M19 12H6M11 6l-6 6 6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Все кейсы
+      </a>
+      <span class="workshop-hero-mark">Концепт-кейс · столярная мастерская</span>
+      <h1 id="workshop-title">Сделано<br><em>руками</em></h1>
+      <p class="case-hero__sub">Столы, полки и мебель из массива. Без фабричного глянца — с характером дерева и следами инструмента.</p>
+      <div class="case-hero__actions">
+        <a class="btn btn--brass" href="tel:+79952585787">Обсудить заказ</a>
+        <a class="btn btn--ghost" href="https://wa.me/79952585787?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BE%D0%B1%D1%81%D1%83%D0%B4%D0%B8%D1%82%D1%8C%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7." target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+      <div class="workshop-facts" aria-label="Условия работы">
+        <span class="workshop-fact"><span class="workshop-fact__dot" aria-hidden="true"></span>Дуб · ясень · орех</span>
+        <span class="workshop-fact"><span class="workshop-fact__dot" aria-hidden="true"></span>Масло, а не лак</span>
+        <span class="workshop-fact workshop-fact--accent"><span class="workshop-fact__dot" aria-hidden="true"></span>Сначала эскиз, потом цена</span>
+      </div>
+    </div>
+    <div class="case-hero__3d" id="workshop-stage" aria-label="3D-рубанок. Потяните, чтобы повернуть">
+      <canvas id="workshop-canvas"></canvas>
+      <div class="hero-3d-fallback">
+        <img src="{{BASE}}assets/img/workshop-plane-fallback.webp" alt="3D-рубанок" width="820" height="760">
+      </div>
+      <span class="case-hint">Потяните, чтобы повернуть</span>
+    </div>
+  </div>
+</section>
+
+<section class="case-section workshop-about" id="about" aria-labelledby="workshop-about-title">
+  <div class="container case-about">
+    <div class="case-about__media reveal">
+      <img src="{{BASE}}assets/img/workshop-hands-1800.webp"
+           srcset="{{BASE}}assets/img/workshop-hands-900.webp 900w, {{BASE}}assets/img/workshop-hands-1800.webp 1800w"
+           sizes="(max-width: 900px) 100vw, 46vw" alt="Руки столяра и рубанок на доске" loading="lazy" width="1800" height="2570">
+      <span class="split__caption workshop-caption">Ручная работа</span>
+    </div>
+    <div class="case-about__body reveal" style="--d:90ms">
+      <p class="eyebrow">О мастерской</p>
+      <h2 id="workshop-about-title">Фабрика<br>делает<br>одинаково.<br>Мы —<br><em>по-разному.</em></h2>
+      <p>Работаем с массивом: дуб, ясень, орех. Не прячем сучки и текстуру — наоборот, выбираем доску, в которой они красивы. Каждое изделие собираем вручную, шлифуем и покрываем маслом.</p>
+      <ol class="workshop-steps" aria-label="Как проходит работа">
+        <li>Сначала эскиз и размеры.</li>
+        <li>Потом выбираем доску.</li>
+        <li>Собираем, шлифуем, покрываем маслом.</li>
+        <li>Привозим и ставим.</li>
+      </ol>
+      <div class="workshop-materials"><span>Дуб</span><span>Ясень</span><span>Орех</span><span>Масло</span></div>
+      <div class="case-about__note">без шпона · без лака · <strong>без «как на фото»</strong></div>
+    </div>
+  </div>
+</section>
+
+<section class="workshop-process" aria-labelledby="workshop-process-title">
+  <div class="container">
+    <p class="eyebrow reveal">Процесс</p>
+    <h2 id="workshop-process-title" class="reveal">От доски <em>до стола</em></h2>
+    <div class="workshop-process__grid">
+      <div class="process-step reveal" style="--d:0ms"><b>01</b><h3>Эскиз</h3><p>Размеры, пропорции, место в комнате. Рисуем до начала работы.</p></div>
+      <div class="process-step reveal" style="--d:360ms"><b>02</b><h3>Доска</h3><p>Выбираем массив и рисунок текстуры. Показываем, что получится.</p></div>
+      <div class="process-step reveal" style="--d:200ms"><b>03</b><h3>Сборка</h3><p>Соединения, шлифовка, подгонка. Без мебельных скоб и шпона.</p></div>
+      <div class="process-step reveal" style="--d:300ms"><b>04</b><h3>Финиш</h3><p>Масло, сушка, доставка. Ставим на место и проверяем.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="case-section workshop-gallery" id="works" aria-labelledby="workshop-gallery-title">
+  <div class="container">
+    <div class="case-section__head reveal">
+      <div>
+        <p class="eyebrow">Работы и процесс</p>
+        <h2 id="workshop-gallery-title">Дерево,<br>инструмент, <em>руки</em></h2>
+      </div>
+      <p>Не студийные рендеры. Реальные доски, стружка и следы работы.</p>
+    </div>
+    <div class="gallery-grid">
+      <figure class="gallery-item reveal">
+        <img src="{{BASE}}assets/img/workshop-plane-1800.webp" alt="Рубанок и стружка на верстаке" loading="lazy" width="1600" height="1067">
+        <span>Рубанок и стружка</span>
+      </figure>
+      <figure class="gallery-item reveal" style="--d:90ms">
+        <img src="{{BASE}}assets/img/workshop-hands-1800.webp" alt="Столяр строгает доску" loading="lazy" width="1400" height="1999">
+        <span>Ручная работа</span>
+      </figure>
+      <figure class="gallery-item reveal" style="--d:180ms">
+        <img src="{{BASE}}assets/img/workshop-tools-1800.webp" alt="Стамеска в руках мастера" loading="lazy" width="1400" height="933">
+        <span>Стамеска</span>
+      </figure>
+      <figure class="gallery-item reveal" style="--d:270ms">
+        <img src="{{BASE}}assets/img/workshop-wood-1800.webp" alt="Сверление дерева" loading="lazy" width="1400" height="933">
+        <span>Сверление</span>
+      </figure>
+      <figure class="gallery-item reveal" style="--d:360ms">
+        <img src="{{BASE}}assets/img/workshop-sand-1800.webp" alt="Шлифовка деревянной детали" loading="lazy" width="1400" height="2100">
+        <span>Шлифовка</span>
+      </figure>
+      <figure class="gallery-item reveal" style="--d:450ms">
+        <img src="{{BASE}}assets/img/workshop-hammer-1800.webp" alt="Молоток и гвозди на доске" loading="lazy" width="1400" height="1050">
+        <span>Молоток и гвозди</span>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="case-section workshop-services" id="services" aria-labelledby="workshop-services-title">
+  <div class="container">
+    <div class="case-section__head reveal">
+      <div>
+        <p class="eyebrow">Услуги и цены</p>
+        <h2 id="workshop-services-title">Что можно<br><em>заказать</em></h2>
+      </div>
+      <p>Цены — пример для концепта. Точная стоимость — после эскиза и размеров.</p>
+    </div>
+    <div class="workshop-price-board">
+      <div class="workshop-price-list reveal">
+        <div class="workshop-price-row">
+          <span class="workshop-price-num">01</span>
+          <div><h3>Стол из массива</h3><p>Под ваш размер и комнату. Дуб, ясень или орех.</p></div>
+          <span class="workshop-price">от 48 000 ₽</span>
+        </div>
+        <div class="workshop-price-row">
+          <span class="workshop-price-num">02</span>
+          <div><h3>Консоль или комод</h3><p>Фасады без шпона. Ящики на деревянных направляющих.</p></div>
+          <span class="workshop-price">от 32 000 ₽</span>
+        </div>
+        <div class="workshop-price-row">
+          <span class="workshop-price-num">03</span>
+          <div><h3>Полка</h3><p>Одна доска, два кронштейна. Крепление в комплекте.</p></div>
+          <span class="workshop-price">от 6 500 ₽</span>
+        </div>
+        <div class="workshop-price-row">
+          <span class="workshop-price-num">04</span>
+          <div><h3>Разделочная доска</h3><p>Торцевая или продольная. Пропитка маслом для контакта с едой.</p></div>
+          <span class="workshop-price">от 2 500 ₽</span>
+        </div>
+        <div class="workshop-price-row">
+          <span class="workshop-price-num">05</span>
+          <div><h3>Реставрация</h3><p>Снимаем старый лак, укрепляем соединения, покрываем маслом.</p></div>
+          <span class="workshop-price">от 7 000 ₽</span>
+        </div>
+        <p class="case-note">Концепт-кейс. Цены и сроки — пример, не публичная оферта.</p>
+      </div>
+      <figure class="workshop-price-media reveal" style="--d:80ms">
+        <img src="{{BASE}}assets/img/workshop-plane-1800.webp" alt="Рубанок на дереве" loading="lazy" width="1600" height="1067">
+        <figcaption>Инструмент, который делает поверхность гладкой</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="case-section workshop-principles" aria-labelledby="workshop-principles-title">
+  <div class="container">
+    <p class="eyebrow reveal">Принципы</p>
+    <h2 id="workshop-principles-title" class="reveal">Два правила<br>мастерской</h2>
+    <div class="principles-grid">
+      <article class="principle-block reveal">
+        <b>01</b>
+        <h3>Качество</h3>
+        <p>Соединения, которые не разболтаются. Масло, а не лак. Доска, которую не поведёт через год.</p>
+      </article>
+      <article class="principle-block reveal" style="--d:100ms">
+        <b>02</b>
+        <h3>Сроки</h3>
+        <p>Называем срок до начала работы и держим его. Если что-то меняется — говорим заранее, а не в день доставки.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="case-section workshop-reviews" aria-labelledby="workshop-reviews-title">
+  <div class="container">
+    <div class="case-section__head reveal">
+      <div>
+        <p class="eyebrow">Отзывы</p>
+        <h2 id="workshop-reviews-title">Что уже стоит<br>в ваших домах</h2>
+      </div>
+      <p>Коротко о столах, полках и старых комодах.</p>
+    </div>
+    <div class="case-reviews">
+      <article class="review-card reveal" style="--d:0ms">
+        <div class="review-card__rating" role="img" aria-label="Оценка 5 из 5">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.7 5.6 6.2.9-4.5 4.4 1.1 6.1-5.5-2.9-5.5 2.9 1.1-6.1L3.1 9.5l6.2-.9L12 3Z" fill="currentColor"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.7 5.6 6.2.9-4.5 4.4 1.1 6.1-5.5-2.9-5.5 2.9 1.1-6.1L3.1 9.5l6.2-.9L12 3Z" fill="currentColor"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.7 5.6 6.2.9-4.5 4.4 1.1 6.1-5.5-2.9-5.5 2.9 1.1-6.1L3.1 9.5l6.2-.9L12 3Z" fill="currentColor"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.7 5.6 6.2.9-4.5 4.4 1.1 6.1-5.5-2.9-5.5 2.9 1.1-6.1L3.1 9.5l6.2-.9L12 3Z" fill="currentColor"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.7 5.6 6.2.9-4.5 4.4 1.1 6.1-5.5-2.9-5.5 2.9 1.1-6.1L3.1 9.5l6.2-.9L12 3Z" fill="currentColor"/></svg>
+        </div>
+        <blockquote>«Заказывали стол на кухню. Получили ровно то, что рисовали на эскизе. Через год — ни одного скрипа.»</blockquote>
+        <div class="review-card__foot">
+          <div class="review-card__person">
+            <span class="review-card__avatar" aria-hidden="true">Д</span>
+            <div class="review-card__author">
+              <span class="review-card__name">Дмитрий</span>
+              <span class="review-card__item">стол из дуба</span>
+            </div>
+          </div>
+          <span class="verified"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m5 12 4 4L19 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Проверено</span>
+        </div>
+      </article>
+      <article class="review-card reveal" style="--d:100ms">
+        <div class="review-card__rating" role="img" aria-label="Оценка 5 из 5">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.7 5.6 6.2.9-4.5 4.4 1.1 6.1-5.5-2.9-5.5 2.9 1.1-6.1L3.1 9.5l6.2-.9L12 3Z" fill="currentColor"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.7 5.6 6.2.9-4.5 4.4 1.1 6.1-5.5-2.9-5.5 2.9 1.1-6.1L3.1 9.5l6.2-.9L12 3Z" fill="currentColor"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.7 5.6 6.2.9-4.5 4.4 1.1 6.1-5.5-2.9-5.5 2.9 1.1-6.1L3.1 9.5l6.2-.9L12 3Z" fill="currentColor"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.7 5.6 6.2.9-4.5 4.4 1.1 6.1-5.5-2.9-5.5 2.9 1.1-6.1L3.1 9.5l6.2-.9L12 3Z" fill="currentColor"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.7 5.6 6.2.9-4.5 4.4 1.1 6.1-5.5-2.9-5.5 2.9 1.1-6.1L3.1 9.5l6.2-.9L12 3Z" fill="currentColor"/></svg>
+        </div>
+        <blockquote>«Полка висит третий год. Держит книги, которые я боялся ставить.»</blockquote>
+        <div class="review-card__foot">
+          <div class="review-card__person">
+            <span class="review-card__avatar" aria-hidden="true">А</span>
+            <div class="review-card__author">
+              <span class="review-card__name">Анна</span>
+              <span class="review-card__item">полка</span>
+            </div>
+          </div>
+          <span class="verified"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m5 12 4 4L19 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Проверено</span>
+        </div>
+      </article>
+      <article class="review-card reveal" style="--d:200ms">
+        <div class="review-card__rating" role="img" aria-label="Оценка 5 из 5">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.7 5.6 6.2.9-4.5 4.4 1.1 6.1-5.5-2.9-5.5 2.9 1.1-6.1L3.1 9.5l6.2-.9L12 3Z" fill="currentColor"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.7 5.6 6.2.9-4.5 4.4 1.1 6.1-5.5-2.9-5.5 2.9 1.1-6.1L3.1 9.5l6.2-.9L12 3Z" fill="currentColor"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.7 5.6 6.2.9-4.5 4.4 1.1 6.1-5.5-2.9-5.5 2.9 1.1-6.1L3.1 9.5l6.2-.9L12 3Z" fill="currentColor"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.7 5.6 6.2.9-4.5 4.4 1.1 6.1-5.5-2.9-5.5 2.9 1.1-6.1L3.1 9.5l6.2-.9L12 3Z" fill="currentColor"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.7 5.6 6.2.9-4.5 4.4 1.1 6.1-5.5-2.9-5.5 2.9 1.1-6.1L3.1 9.5l6.2-.9L12 3Z" fill="currentColor"/></svg>
+        </div>
+        <blockquote>«Принесли старый комод. Вернули как новый, только лучше.»</blockquote>
+        <div class="review-card__foot">
+          <div class="review-card__person">
+            <span class="review-card__avatar" aria-hidden="true">С</span>
+            <div class="review-card__author">
+              <span class="review-card__name">Сергей</span>
+              <span class="review-card__item">реставрация</span>
+            </div>
+          </div>
+          <span class="verified"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m5 12 4 4L19 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Проверено</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="case-section workshop-order case-book" id="order" aria-labelledby="workshop-order-title">
+  <div class="container case-book__inner">
+    <div class="reveal">
+      <p class="eyebrow">Заказ</p>
+      <h2 id="workshop-order-title">Расскажите,<br>что нужно</h2>
+      <p>Пришлите размеры или фото места. Мы ответим, сколько это стоит и сколько займёт. Эскиз — до начала работы.</p>
+      <div class="workshop-order__contacts">
+        <a href="tel:+79952585787">+7 995 258-57-87</a>
+        <a href="https://wa.me/79952585787" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+    <div class="case-book__actions reveal" style="--d:90ms">
+      <a class="btn btn--dark" href="tel:+79952585787">Позвонить</a>
+      <a class="btn btn--ghost" href="https://wa.me/79952585787" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <div class="workshop-footnote">
+    <span>Концепт-кейс FITFUUX. Демо-мастерская, цены и имена — для примера.</span>
+    <a class="link-arrow" href="../portfolio.html">Смотреть второй кейс
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </div>
+</div>

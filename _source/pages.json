@@ -1,0 +1,117 @@
+[
+  {
+    "out": "index.html",
+    "base": "",
+    "page": "home",
+    "body": "index.html",
+    "body_class": "page-home",
+    "title": "FITFUUX — сайты и лендинги для малого бизнеса под ключ от 6 500 ₽",
+    "desc": "Лендинги и сайты для малого бизнеса под ключ. Сайт — от 6 500 ₽, логотип — 1 500 ₽. Дизайн, тексты, вёрстка, заявки и оплата. Правки до запуска включены.",
+    "og": "og-home.jpg",
+    "css": [
+      "home.css"
+    ],
+    "jsonld": "{\"@context\":\"https://schema.org\",\"@type\":\"ProfessionalService\",\"name\":\"FITFUUX\",\"description\":\"Лендинги и сайты для малого бизнеса под ключ. Дизайн, тексты, вёрстка, заявки и оплата.\",\"telephone\":\"+79952585787\",\"priceRange\":\"6500-12000 RUB\",\"areaServed\":\"Россия\",\"sameAs\":[\"https://t.me/Fitfuux\"],\"founder\":{\"@type\":\"Person\",\"name\":\"Алексей\"}}"
+  },
+  {
+    "out": "services.html",
+    "base": "",
+    "page": "services",
+    "body": "services.html",
+    "body_class": "page-services",
+    "title": "Услуги — лендинг под ключ, заявки, оплата, 3D и анимации | FITFUUX",
+    "desc": "Лендинг под ключ, продающая логика, заявки и оплата, 3D и анимации. Сайт — от 6 500 ₽, логотип — 1 500 ₽. Правки до запуска включены.",
+    "og": "og-services.jpg",
+    "css": [
+      "home.css",
+      "pages.css"
+    ]
+  },
+  {
+    "out": "portfolio.html",
+    "base": "",
+    "page": "portfolio",
+    "body": "portfolio.html",
+    "body_class": "page-portfolio",
+    "title": "Кейсы — сайт салона красоты и столярной мастерской | FITFUUX",
+    "desc": "Два кейса: сайт салона красоты «Здесь вам становится спокойно» и сайт столярной мастерской «Сделано руками». Дизайн, тексты, 3D.",
+    "og": "og-portfolio.jpg",
+    "css": [
+      "pages.css"
+    ]
+  },
+  {
+    "out": "about.html",
+    "base": "",
+    "page": "about",
+    "body": "about.html",
+    "body_class": "page-about",
+    "title": "Обо мне — Алексей, сайты для малого бизнеса под ключ | FITFUUX",
+    "desc": "Меня зовут Алексей. Делаю лендинги и сайты для малого бизнеса под ключ. Отвечаю лично, без менеджеров. Работаю по России, удалённо.",
+    "og": "og-about.jpg",
+    "css": [
+      "home.css",
+      "pages.css"
+    ]
+  },
+  {
+    "out": "pricing.html",
+    "base": "",
+    "page": "pricing",
+    "body": "pricing.html",
+    "body_class": "page-pricing",
+    "title": "Цены — сайт-визитка 6 500 ₽, логотип 1 500 ₽, сайт с 3D 12 000 ₽ | FITFUUX",
+    "desc": "Три тарифа: «Старт» — сайт 6 500 ₽ + логотип 1 500 ₽, «Под ключ» 12 000 ₽ с 3D-логотипом, 3D-моделями и оплатой, «Доработка» 2 000 ₽.",
+    "og": "og-pricing.jpg",
+    "css": [
+      "home.css",
+      "pages.css"
+    ]
+  },
+  {
+    "out": "contacts.html",
+    "base": "",
+    "page": "contacts",
+    "body": "contacts.html",
+    "body_class": "page-contacts",
+    "title": "Контакты — Telegram, телефон, СБП | FITFUUX",
+    "desc": "Напишите в Telegram @Fitfuux или позвоните +7 995 258-57-87. СБП · получатель Алексей. Работаю по России, удалённо.",
+    "og": "og-contacts.jpg",
+    "css": [
+      "home.css",
+      "pages.css"
+    ]
+  },
+  {
+    "out": "cases/salon.html",
+    "base": "../",
+    "page": "",
+    "body": "salon.html",
+    "body_class": "case-page salon-page",
+    "title": "Салон красоты — «Здесь вам становится спокойно» | кейс FITFUUX",
+    "desc": "Концепт-кейс сайта салона красоты: услуги, команда, отзывы и запись. Тёплая палитра, 3D-зеркало, живые тексты.",
+    "og": "og-salon.jpg",
+    "css": [
+      "cases.css",
+      "salon.css"
+    ],
+    "module": "case-salon.js",
+    "theme": "#f7f0e6"
+  },
+  {
+    "out": "cases/workshop.html",
+    "base": "../",
+    "page": "",
+    "body": "workshop.html",
+    "body_class": "case-page workshop-page",
+    "title": "Столярная мастерская — «Сделано руками» | кейс FITFUUX",
+    "desc": "Концепт-кейс сайта столярной мастерской: работы, услуги и цены, принципы и заказ. Тёплое дерево, графит, 3D-рубанок.",
+    "og": "og-workshop.jpg",
+    "css": [
+      "cases.css",
+      "workshop.css"
+    ],
+    "module": "case-workshop.js",
+    "theme": "#14110e"
+  }
+]
