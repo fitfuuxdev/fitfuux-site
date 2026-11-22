@@ -57,7 +57,7 @@
 }
 .case-hero__sub {
   max-width: 44ch;
-  color: rgba(242, 237, 228, .64);
+  color: rgba(242, 237, 228, .76);
   font-size: clamp(15px, 1.3vw, 18px);
   line-height: 1.6;
 }
@@ -67,7 +67,7 @@
   flex-wrap: wrap;
   gap: 10px 26px;
   margin-top: 30px;
-  color: rgba(242, 237, 228, .38);
+  color: rgba(242, 237, 228, .58);
   font-size: 11px;
   letter-spacing: .08em;
   text-transform: uppercase;
@@ -99,7 +99,7 @@
   position: absolute;
   right: 0;
   bottom: -2px;
-  color: rgba(242, 237, 228, .3);
+  color: rgba(242, 237, 228, .56);
   font-size: 10px;
   letter-spacing: .14em;
   text-transform: uppercase;

@@ -9,8 +9,8 @@
 
   if (preloader && document.documentElement.classList.contains('preloader-active')) {
     const compact = window.matchMedia('(max-width: 700px)').matches;
-    const minShow = compact ? 1250 : 1550;
-    const revealTime = compact ? 600 : 700;
+    const minShow = compact ? 1000 : 1300;
+    const revealTime = compact ? 520 : 600;
     const started = window.__preStart || performance.now();
     const wait = Math.max(0, minShow - (performance.now() - started));
 

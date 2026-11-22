@@ -6,7 +6,7 @@
   --salon-bg: #f7f0e6;
   --salon-bg-2: #efe4d4;
   --salon-ink: #2a211a;
-  --salon-muted: rgba(42, 33, 26, .6);
+  --salon-muted: rgba(42, 33, 26, .68);
   --salon-line: rgba(42, 33, 26, .16);
   --brass-deep: #8a6636;
   background: var(--salon-bg);
