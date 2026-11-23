@@ -30,7 +30,10 @@
   const clamp = (value, min, max) => Math.min(max, Math.max(min, value));
 
   const updateParallax = () => {
-    if (reduced || window.innerWidth < 720 || !parallaxImages.length) return;
+    if (reduced || window.innerWidth < 720 || !parallaxImages.length) {
+      parallaxImages.forEach((img) => { img.style.transform = ''; });
+      return;
+    }
     parallaxImages.forEach((img) => {
       const section = img.closest('.hero, .page-hero, .case-hero, .cta-band');
       if (!section) return;
@@ -69,7 +72,7 @@
     });
   };
   window.addEventListener('scroll', onScroll, { passive: true });
-  window.addEventListener('resize', updateTextParallax, { passive: true });
+  window.addEventListener('resize', () => { updateParallax(); updateTextParallax(); }, { passive: true });
   onScroll();
 
   if (burger && nav) {

@@ -3,7 +3,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SRC = Path(__file__).resolve().parent
-VER = "20261122ca"
+VER = "20261122cc"
 
 ARROW = '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>'
 UP = '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>'
@@ -137,7 +137,28 @@ def head(meta, base):
         three_url = (base or "./") + "assets/js/vendor/three.module.min.js"
         module = f"""
   <script type="importmap">{{"imports": {{"three": "{three_url}"}}}}</script>
-  <script type="module" src="{base}assets/js/{meta['module']}?v={VER}"></script>"""
+  <script>
+  (() => {{
+    const load = () => {{
+      const stages = document.querySelectorAll('.case-hero__3d, #wolf-stage');
+      const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const mobile = window.matchMedia('(max-width: 720px)').matches;
+      const memory = navigator.deviceMemory || 8;
+      const cores = navigator.hardwareConcurrency || 8;
+      const saveData = navigator.connection && navigator.connection.saveData;
+      if (reduce || mobile || memory <= 2 || cores <= 2 || saveData) {{
+        stages.forEach((stage) => stage.classList.add('is-fallback'));
+        return;
+      }}
+      const script = document.createElement('script');
+      script.type = 'module';
+      script.src = '{base}assets/js/{meta['module']}?v={VER}';
+      document.body.appendChild(script);
+    }};
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', load, {{ once: true }});
+    else load();
+  }})();
+  </script>"""
     jsonld = ""
     if meta.get("jsonld"):
         jsonld = f"""

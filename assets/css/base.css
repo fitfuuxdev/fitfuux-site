@@ -79,6 +79,33 @@ img { height: auto; }
   will-change: transform;
 }
 
+@media (max-width: 720px) {
+  .hero-media,
+  .page-hero__bg,
+  .case-hero__bg,
+  .cta-band__bg {
+    inset: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .hero-media img,
+  .page-hero__bg img,
+  .case-hero__bg img,
+  .cta-band__bg img,
+  .page-home .cta-band__bg img {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: none !important;
+    will-change: auto;
+  }
+}
+
 a { color: inherit; text-decoration: none; }
 button { font: inherit; color: inherit; }
 
@@ -814,4 +841,10 @@ html.preloader-active:not(.preloader-reveal) .page-hero__aside {
   html.preloader-active .site-header,
   html.preloader-active main,
   html.preloader-active .site-footer { opacity: 1 !important; }
+}
+@media (hover: none) and (prefers-reduced-motion: no-preference) {
+  .btn:active,
+  .link-arrow:active { transform: translateY(1px); }
+  .case-card:active img { transform: scale(1.03); filter: saturate(1) brightness(.92); }
+  .service-card:active { transform: translateY(-2px); }
 }

@@ -94,6 +94,12 @@
 .case-hero__3d.is-fallback canvas { display: none; }
 .case-hero__3d .hero-3d-fallback { display: none; position: absolute; inset: 0; align-items: center; justify-content: center; }
 .case-hero__3d.is-fallback .hero-3d-fallback { display: flex; }
+.case-hero__3d.is-fallback .case-hint { display: none; }
+@media (max-width: 720px) {
+  .case-hero__3d canvas { display: none; }
+  .case-hero__3d .hero-3d-fallback { display: flex; }
+  .case-hero__3d .case-hint { display: none; }
+}
 .case-hero__3d .hero-3d-fallback img { max-height: 100%; width: auto; filter: drop-shadow(0 26px 48px rgba(0, 0, 0, .42)); }
 .case-hint {
   position: absolute;

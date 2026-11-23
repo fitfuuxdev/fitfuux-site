@@ -7,6 +7,14 @@ if (canvas && stage) init();
 function init() {
   const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const isMobile = window.matchMedia('(max-width: 720px)').matches;
+  const memory = navigator.deviceMemory || 8;
+  const cores = navigator.hardwareConcurrency || 8;
+  const saveData = navigator.connection && navigator.connection.saveData;
+
+  if (reduced || isMobile || memory <= 2 || cores <= 2 || saveData) {
+    stage.classList.add('is-fallback');
+    return;
+  }
 
   let renderer;
   try {

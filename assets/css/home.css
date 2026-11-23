@@ -1033,7 +1033,7 @@
 
 @media (prefers-reduced-motion: reduce) {
   .hero-media img, .page-home .cta-band__bg img {
-    transform: scale(1.02) !important;
+    transform: none !important;
     transition: none;
   }
 }
