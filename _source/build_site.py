@@ -1,9 +1,9 @@
-import json
+﻿import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SRC = Path(__file__).resolve().parent
-VER = "20261122cc"
+VER = "20261127a"
 
 ARROW = '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>'
 UP = '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>'
@@ -45,7 +45,7 @@ PRELOAD_JS = """<script>
       if (root.classList.contains('preloader-active') && !root.classList.contains('preloader-reveal')) {
         root.classList.remove('preloader-active');
       }
-    }, 4000);
+    }, 1400);
   } catch (e) {}
 })();
 </script>"""

@@ -4,15 +4,18 @@
    ============================================================ */
 
 :root {
-  --ink: #0b0a09;
-  --ink-2: #11100e;
-  --ink-3: #181613;
+  --ink: #0c0b09;
+  --ink-2: #14110e;
+  --ink-3: #17130f;
   --paper: #f2ede4;
-  --paper-2: #e7ddce;
+  --paper-2: #e9dfd0;
   --paper-3: #d9cbb8;
-  --brass: #b08a55;
-  --brass-soft: #c9a978;
+  --brass: #c9a978;
+  --brass-soft: #d8bc90;
   --brass-deep: #8a6a3b;
+  --brass-on-paper: #6e5330;
+  --card-line: rgba(201, 169, 120, .16);
+  --card-line-hover: rgba(201, 169, 120, .34);
   --text: rgba(242, 237, 228, .86);
   --muted: rgba(242, 237, 228, .68);
   --muted-2: rgba(242, 237, 228, .52);
@@ -40,7 +43,7 @@
 html {
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
-  scrollbar-color: #3a342c #0b0a09;
+  scrollbar-color: #3a342c #0c0b09;
 }
 
 body {
@@ -61,13 +64,13 @@ body::after {
   inset: 0;
   z-index: 9999;
   pointer-events: none;
-  opacity: .028;
+  opacity: .022;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.82' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)' opacity='.7'/%3E%3C/svg%3E");
 }
 
 body.menu-open { overflow: hidden; }
 
-::selection { background: var(--brass); color: #0b0a09; }
+::selection { background: var(--brass); color: #0c0b09; }
 
 img, svg, canvas { display: block; max-width: 100%; }
 img { height: auto; }
@@ -169,7 +172,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   gap: 12px;
   margin: 0 0 22px;
   color: var(--brass-soft);
-  font-family: var(--font-t);
+  font-family: var(--font-cond);
   font-size: 11px;
   font-weight: 500;
   letter-spacing: .2em;
@@ -472,7 +475,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .footer-col h4 {
   margin: 4px 0 18px;
   color: rgba(242, 237, 228, .5);
-  font-family: var(--font-t);
+  font-family: var(--font-cond);
   font-size: 10.5px;
   font-weight: 500;
   letter-spacing: .18em;
@@ -537,7 +540,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   letter-spacing: .02em;
 }
 .footer-bottom__left { display: flex; flex-wrap: wrap; gap: 8px 22px; }
-.footer-credits { color: rgba(242, 237, 228, .5); }
+.footer-credits { color: rgba(242, 237, 228, .68); }
 
 .to-top {
   display: inline-flex;
@@ -548,8 +551,10 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   border: 0;
   background: transparent;
   color: rgba(242, 237, 228, .62);
+  font-family: var(--font-cond);
   font-size: 11.5px;
-  letter-spacing: .12em;
+  font-weight: 500;
+  letter-spacing: .14em;
   text-transform: uppercase;
   cursor: pointer;
   transition: color .3s var(--ease);
@@ -847,4 +852,8 @@ html.preloader-active:not(.preloader-reveal) .page-hero__aside {
   .link-arrow:active { transform: translateY(1px); }
   .case-card:active img { transform: scale(1.03); filter: saturate(1) brightness(.92); }
   .service-card:active { transform: translateY(-2px); }
+}
+
+@media (max-width: 600px) {
+  .service-index, .price-label, .hero-meta, .footer-bottom, .sbp, .case-card__tag { font-size: 12px; }
 }
